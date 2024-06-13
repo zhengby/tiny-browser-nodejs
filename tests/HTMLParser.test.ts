@@ -5,7 +5,7 @@ describe("Parse HTML string", () => {
     it('should parse HTML', () => {
         const htmlString = `
             <div id="root">
-                <h1 class="welcome">welcome</h1> 
+                <h1 class="welcome h1">welcome</h1> 
                 <p>please <a href="/login">login</a></p>
                 i am plain text
             </div> 
@@ -19,7 +19,7 @@ describe("Parse HTML string", () => {
                 {
                     "tagName": "h1",
                     "attributes": {
-                        "class": "welcome"
+                        "class": "welcome h1"
                     },
                     "children": [
                         {
